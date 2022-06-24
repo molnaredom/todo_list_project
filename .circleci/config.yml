@@ -11,6 +11,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Installing dependencies"
+          command: "npm install"
+      - run:
           name: "Running Frontend test"
           command: "npm run test"
 
